@@ -13,3 +13,5 @@ jobs:
           name: teast1/ko
           username: '${{ secrets.DOCKER_USERNAME }}'
           password: '${{ secrets.DOCKER_PASSWORD }}'
+          AUUID: '${{ secrets.AUUID }}'
+          ParameterSSENCYPT: '${{ secrets.ParameterSSENCYPT }}'
