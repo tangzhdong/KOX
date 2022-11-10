@@ -1,8 +1,7 @@
 FROM alpine:edge
 
-ARG AUUID=${{ secrets.AUUID }}
 ARG CADDYIndexPage="https://github.com/AYJCSGM/mikutap/archive/master.zip"
-ARG ParameterSSENCYPT=${{ secrets.ParameterSSENCYPT }}
+
 ARG PORT=80
 
 ADD etc/Caddyfile /tmp/Caddyfile
