@@ -15,4 +15,3 @@ jobs:
           name: '${{ secrets.DOCKER_HUB_ID }}'
           username: '${{ secrets.DOCKER_USERNAME }}'
           password: '${{ secrets.DOCKER_PASSWORD }}'
-          uuid: '${{ secrets.UUID }}'
