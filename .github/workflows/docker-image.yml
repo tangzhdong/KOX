@@ -8,6 +8,8 @@ jobs:
       - uses: actions/checkout@master
       - name: Building Docker Image
         uses: elgohr/Publish-Docker-Github-Action@master
+        env:
+          uuid: '${{ secrets.UUID }}'
         with:
           # 下方的name格式为：Docker Hub ID/自定义镜像名称
           name: '${{ secrets.DOCKER_HUB_ID }}'
