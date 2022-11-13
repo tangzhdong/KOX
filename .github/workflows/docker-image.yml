@@ -4,12 +4,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+      --build-arg "AUUID=${{ secrets.AUUID }}" 
     steps:
       - uses: actions/checkout@master
       - name: Building Docker Image
         uses: elgohr/Publish-Docker-Github-Action@v4
-        env:
-          uuid: '${{ secrets.UUID }}'
         with:
           # 下方的name格式为：Docker Hub ID/自定义镜像名称
           name: '${{ secrets.DOCKER_HUB_ID }}'
