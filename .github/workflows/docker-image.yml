@@ -3,11 +3,11 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: ubuntu-latest   
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - name: Building Docker Image
-        uses: elgohr/Publish-Docker-Github-Action@v4
+        uses: elgohr/Publish-Docker-Github-Action@master
         with:
           # 下方的name格式为：Docker Hub ID/自定义镜像名称
           name: '${{ secrets.DOCKER_HUB_ID }}'
